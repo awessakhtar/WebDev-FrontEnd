@@ -15,9 +15,10 @@
 <body>
   <header class="primary-header">
     <div class="container">
-      <a href="#"><img src="images/logo.svg" alt="manage"></a>
+      <a href="#"><img src="images/logo.svg" alt="Manage"></a>
+      <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="visually-hidden">Menue</span></button>
       <nav class="primary-navigation">
-        <ul aria-label="Primary" role="list" class="nav-list">
+        <ul aria-label="Primary" role="list" class="nav-list" id="primary-navigation">
           <li><a href="#">Pricing</a></li>
           <li><a href="#">Product</a></li>
           <li><a href="#">About Us</a></li>
@@ -55,12 +56,12 @@
             <h2 class="fs-secondary-heading fw-bold">What’s different about Manage?</h2>
             <p>Manage provides all the functionality your team needs, without the complexity. Our software is
               tailor-made for modern
-              digital product teams</p>
+              digital product teams.</p>
           </div>
           <div>
             <ul class="numbered-items" role="list">
               <li>
-                <h3 class="fs-600 fw-bold">rack company-wide progress</h3>
+                <h3 class="fs-600 fw-bold">Track company-wide progress</h3>
                 <p>See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone
                   level all the way done to the smallest of details. Never lose sight of the bigger picture again.</p>
               </li>
@@ -137,6 +138,7 @@
     </div>
   </footer>
 
+  
   <script type="module" src="/main.js"></script>
 </body>
 
