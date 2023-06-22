@@ -253,6 +253,31 @@ button[data-type="inverted"]:focus-visible {
   align-items: center;
 }
 
+/* cta */
+
+.cta {
+  position: relative;
+  isolation: isolate;
+  text-align: center;
+}
+
+@media (min-width: 50em) {
+  .cta {
+    text-align: left;
+  }
+}
+
+.cta::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: url("images/bg-tablet-pattern.svg"), url("images/bg-tablet-pattern.svg");
+  background-position: -15rem -5rem, 80rem -42rem;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+}
+
 /* Utility Classes */
 
 .container {
@@ -260,6 +285,21 @@ button[data-type="inverted"]:focus-visible {
   --padding: 1rem;
   width: min(var(--max-width), 100% - (var(--padding) * 2));
   margin-inline: auto;
+}
+
+.vertical-align-center {
+  align-items: center;
+}
+
+
+.Justify-self-end {
+  justify-self: end;
+}
+
+@media (min-width: 50em) {
+  .Justify-self-end-md {
+    align-items: center;
+  }
 }
 
 :where(.flow :not(:first-child)) {
